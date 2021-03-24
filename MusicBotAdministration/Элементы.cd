@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MusicBotAdministration.Controls.DecimalBox">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAACAAAAAAAACAAAACAAAAAAAAAAIgAAAABAA=</HashCode>
+      <FileName>Controls\DecimalBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Controls.LatinTextBox">
+    <Position X="5.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAIAAAAABAA=</HashCode>
+      <FileName>Controls\LatinTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Controls.NumberBox">
+    <Position X="7" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAIAAAAABAA=</HashCode>
+      <FileName>Controls\NumberBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Controls.SelectTracks">
+    <Position X="1.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAIAACAAAFIQAABAAEIAAAQAA=</HashCode>
+      <FileName>Controls\SelectTracks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Controls.SelectUser">
+    <Position X="8.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABAAAAACIAEAAAAAKAAAACAIAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\SelectUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

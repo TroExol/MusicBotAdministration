@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MusicBotAdministration.Classes.DbConnector">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAgAAAAAQAAAAAAAAgAAEAAEAAACAAAAAAAAA=</HashCode>
+      <FileName>Classes\DBConnector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Classes.Misc">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Misc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Classes.Payments">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAUAAAAAQAAAAAAIAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Classes\Payments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Classes.Payment">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAIAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Payments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Classes.Queries">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAMAAAAAAAAIAAAIAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Classes\Queries.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Classes.Query">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAgAAQAAAAgAAAAAAAAIAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Queries.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Classes.QueryTypes">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAEAAAAAAAAAAAAIAAAAAEAAAAEAQAAAAAAAA=</HashCode>
+      <FileName>Classes\QueryTypes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Classes.QueryType">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\QueryTypes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Classes.Subscriptions">
+    <Position X="9.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAEAAAAIAAAAAAAIAAAAAAAAAAAEQAAAAAAAA=</HashCode>
+      <FileName>Classes\Subscriptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Classes.Subscription">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Classes\Subscriptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Classes.Tracks">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAEAAAAAAAAAAAAIAAAAAAAAgAAAQAAAAAAAA=</HashCode>
+      <FileName>Classes\Tracks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Classes.Track">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAgAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Tracks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Classes.Author">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Tracks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Classes.Users">
+    <Position X="11" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAEAAAAAAAAAAAQIAAAAAAAAACAAQAAAAAAAA=</HashCode>
+      <FileName>Classes\Users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicBotAdministration.Classes.User">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgACAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{78C29865-0FFD-456A-866B-71120437E1D9}</ProjectGuid>
+        <OutputType>WinExe</OutputType>
+        <RootNamespace>MusicBotAdministration</RootNamespace>
+        <AssemblyName>MusicBotAdministration</AssemblyName>
+        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <Deterministic>true</Deterministic>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Xml.Linq" />
+        <Reference Include="System.Data.DataSetExtensions" />
+        <Reference Include="Microsoft.CSharp" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Deployment" />
+        <Reference Include="System.Drawing" />
+        <Reference Include="System.Net.Http" />
+        <Reference Include="System.Windows.Forms" />
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Classes\DBConnector.cs" />
+        <Compile Include="Classes\Misc.cs" />
+        <Compile Include="Classes\Payments.cs" />
+        <Compile Include="Classes\Queries.cs" />
+        <Compile Include="Classes\QueryTypes.cs" />
+        <Compile Include="Classes\Subscriptions.cs" />
+        <Compile Include="Classes\Tracks.cs" />
+        <Compile Include="Classes\Users.cs" />
+        <Compile Include="Controls\DecimalBox.cs">
+          <SubType>Component</SubType>
+        </Compile>
+        <Compile Include="Controls\DecimalBox.Designer.cs">
+          <DependentUpon>DecimalBox.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Controls\LatinTextBox.cs">
+          <SubType>Component</SubType>
+        </Compile>
+        <Compile Include="Controls\LatinTextBox.Designer.cs">
+          <DependentUpon>LatinTextBox.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Controls\NumberBox.cs">
+          <SubType>Component</SubType>
+        </Compile>
+        <Compile Include="Controls\NumberBox.Designer.cs">
+          <DependentUpon>NumberBox.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Controls\SelectTracks.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Controls\SelectTracks.Designer.cs">
+          <DependentUpon>SelectTracks.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Controls\SelectUser.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Controls\SelectUser.Designer.cs">
+          <DependentUpon>SelectUser.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\AboutProgram.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\AboutProgram.Designer.cs">
+          <DependentUpon>AboutProgram.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\EditData\EditUser.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\EditData\EditUser.Designer.cs">
+          <DependentUpon>EditUser.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\EditData\EditPayment.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\EditData\EditPayment.Designer.cs">
+          <DependentUpon>EditPayment.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\EditData\EditQuery.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\EditData\EditQuery.Designer.cs">
+          <DependentUpon>EditQuery.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\EditData\EditQueryType.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\EditData\EditQueryType.Designer.cs">
+          <DependentUpon>EditQueryType.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\EditData\EditSubscription.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\EditData\EditSubscription.Designer.cs">
+          <DependentUpon>EditSubscription.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\EditData\EditTrack.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\EditData\EditTrack.Designer.cs">
+          <DependentUpon>EditTrack.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\Reports\PopularQueryTypesReport.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\Reports\PopularQueryTypesReport.Designer.cs">
+          <DependentUpon>PopularQueryTypesReport.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\Reports\ProfitReport.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\Reports\ProfitReport.Designer.cs">
+          <DependentUpon>ProfitReport.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\Reports\QueriesReport.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\Reports\QueriesReport.Designer.cs">
+          <DependentUpon>QueriesReport.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\Reports\UserActivitiesReport.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\Reports\UserActivitiesReport.Designer.cs">
+          <DependentUpon>UserActivitiesReport.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\SqlConstructor\DataView.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\SqlConstructor\DataView.Designer.cs">
+          <DependentUpon>DataView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\SqlConstructor\SqlConstructor.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\SqlConstructor\SqlConstructor.Designer.cs">
+          <DependentUpon>SqlConstructor.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\Tables\PaymentsTable.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\Tables\PaymentsTable.Designer.cs">
+          <DependentUpon>PaymentsTable.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\Tables\QueryTypesTable.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\Tables\QueryTypesTable.Designer.cs">
+          <DependentUpon>QueryTypesTable.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\MainForm.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\MainForm.Designer.cs">
+          <DependentUpon>MainForm.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\Tables\SubscriptionsTable.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\Tables\SubscriptionsTable.Designer.cs">
+          <DependentUpon>SubscriptionsTable.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\Tables\TracksTable.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\Tables\TracksTable.Designer.cs">
+          <DependentUpon>TracksTable.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\Tables\UserSelectTable.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\Tables\UserSelectTable.Designer.cs">
+          <DependentUpon>UserSelectTable.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\Tables\UsersTable.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\Tables\UsersTable.Designer.cs">
+          <DependentUpon>UsersTable.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\UserActions\Auth.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\UserActions\Auth.Designer.cs">
+          <DependentUpon>Auth.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Forms\UserActions\ChangePass.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Forms\UserActions\ChangePass.Designer.cs">
+          <DependentUpon>ChangePass.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Program.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <EmbeddedResource Include="Controls\LatinTextBox.resx">
+          <DependentUpon>LatinTextBox.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Controls\SelectTracks.resx">
+          <DependentUpon>SelectTracks.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Controls\SelectUser.resx">
+          <DependentUpon>SelectUser.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\AboutProgram.resx">
+          <DependentUpon>AboutProgram.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\EditData\EditUser.resx">
+          <DependentUpon>EditUser.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\EditData\EditPayment.resx">
+          <DependentUpon>EditPayment.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\EditData\EditQuery.resx">
+          <DependentUpon>EditQuery.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\EditData\EditQueryType.resx">
+          <DependentUpon>EditQueryType.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\EditData\EditSubscription.resx">
+          <DependentUpon>EditSubscription.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\EditData\EditTrack.resx">
+          <DependentUpon>EditTrack.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\MainForm.resx">
+          <DependentUpon>MainForm.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\Reports\PopularQueryTypesReport.resx">
+          <DependentUpon>PopularQueryTypesReport.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\Reports\ProfitReport.resx">
+          <DependentUpon>ProfitReport.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\Reports\QueriesReport.resx">
+          <DependentUpon>QueriesReport.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\Reports\UserActivitiesReport.resx">
+          <DependentUpon>UserActivitiesReport.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\SqlConstructor\DataView.resx">
+          <DependentUpon>DataView.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\SqlConstructor\SqlConstructor.resx">
+          <DependentUpon>SqlConstructor.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\Tables\PaymentsTable.resx">
+          <DependentUpon>PaymentsTable.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\Tables\QueryTypesTable.resx">
+          <DependentUpon>QueryTypesTable.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\Tables\SubscriptionsTable.resx">
+          <DependentUpon>SubscriptionsTable.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\Tables\TracksTable.resx">
+          <DependentUpon>TracksTable.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\Tables\UserSelectTable.resx">
+          <DependentUpon>UserSelectTable.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\Tables\UsersTable.resx">
+          <DependentUpon>UsersTable.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\UserActions\Auth.resx">
+          <DependentUpon>Auth.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Forms\UserActions\ChangePass.resx">
+          <DependentUpon>ChangePass.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Properties\Resources.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+            <SubType>Designer</SubType>
+        </EmbeddedResource>
+        <Compile Include="Properties\Resources.Designer.cs">
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Resources.resx</DependentUpon>
+        </Compile>
+        <None Include="Properties\Settings.settings">
+            <Generator>SettingsSingleFileGenerator</Generator>
+            <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+        </None>
+        <Compile Include="Properties\Settings.Designer.cs">
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Settings.settings</DependentUpon>
+            <DesignTimeSharedInput>True</DesignTimeSharedInput>
+        </Compile>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="App.config" />
+    </ItemGroup>
+    <ItemGroup>
+      <COMReference Include="Excel">
+        <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+        <VersionMajor>1</VersionMajor>
+        <VersionMinor>9</VersionMinor>
+        <Lcid>0</Lcid>
+        <WrapperTool>tlbimp</WrapperTool>
+        <Isolated>False</Isolated>
+        <EmbedInteropTypes>True</EmbedInteropTypes>
+      </COMReference>
+      <COMReference Include="Office">
+        <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+        <VersionMajor>2</VersionMajor>
+        <VersionMinor>8</VersionMinor>
+        <Lcid>0</Lcid>
+        <WrapperTool>tlbimp</WrapperTool>
+        <Isolated>False</Isolated>
+        <EmbedInteropTypes>True</EmbedInteropTypes>
+      </COMReference>
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
